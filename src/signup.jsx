@@ -34,13 +34,13 @@ const Signup = () => {
     const users = JSON.parse(localStorage.getItem("users")) || [];
     if (users.some(u => u.Email === email)) {
       alert("User already registered, please login!");
-      navigate('./');
+      navigate('/login');
       return;
     }
     users.push(newUser);
     localStorage.setItem("users", JSON.stringify(users));
     alert("Registered successfully, please login.");
-    navigate('./');
+    navigate('/login');
   };
 
   return (
@@ -120,7 +120,7 @@ const Signup = () => {
           </Form.Control.Feedback>
         </Form.Group>
         <p>
-          Already have an account, please <a href="./">login</a>
+          Already have an account, please <a href="/">login</a>
         </p>
         <Button variant="info" type="submit">
           Sign Up
