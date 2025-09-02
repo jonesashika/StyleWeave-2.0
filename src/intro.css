@@ -1,0 +1,132 @@
+.image1 {
+    transition: transform 0.2s;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    object-fit:fill;
+    border-radius: 10%;
+}
+
+.image1:hover {
+    transform: scale(1.1);
+}
+
+
+.image2 {
+    transition: transform 0.2s;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10%;
+}
+
+.image2:hover {
+    transform: scale(1.1);
+}
+
+.image3 {
+    position: relative;
+    transition: transform 0.2s;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.image3:hover {
+    transform: scale(1.1);
+}
+
+.image4 {
+    position: relative;
+    transition: transform 0.2s;
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+}
+
+.image4:hover {
+    transform: scale(1.1);
+}
+
+.image5 {
+    position: relative;
+    transition: transform 0.2s;
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+}
+
+.image5:hover {
+    transform: scale(1.1);
+}
+
+.images {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    height: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-radius: 50%;
+    align-content: center;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.title {
+    color: rgb(31, 29, 26);
+    font-size: 45px;
+    text-shadow: 2px 3px 10px rgb(247, 11, 200),
+        4px 4px 5px rgb(255, 0, 8),
+        6px 6px 7px rgb(238, 255, 0);
+     /* margin-bottom: 90px; */
+}
+
+.heading {
+    color: rgb(129, 91, 54);
+    /* text-shadow: 4px 5px 2px #9f5612; */
+    font-family: italics;
+    margin-bottom: 200px;
+    font-weight: bolder;
+    font-size: large;
+}
+
+/* .button1 {
+    transition: tranform 0.2s;
+    color: rgb(245, 233, 219);
+
+    border-radius: 20px;
+    height: 30px;
+    width: 130px;
+    background-color: rgb(241, 118, 105);
+}
+
+.button1:hover {
+    transform: translateX(-2px);
+    box-shadow: 0 0 5px rgb(241, 9, 9);
+} */
+
+.dresses {
+    
+    justify-content: center;
+    font-family: cursive;
+    color: lavender;
+    text-shadow: 2px 2px violet;
+    /* overflow: hidden; */
+    flex-wrap: wrap;
+}
+
+.box {
+    transition: transform 0.2s;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    background-color: lab(70.01% 50.51 -14.67);
+    /* box-shadow: 1px 1px 1px 1px rgb(249, 150, 183); */
+}

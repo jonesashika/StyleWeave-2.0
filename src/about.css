@@ -1,0 +1,32 @@
+.div{
+    line-height: 2;
+    /* text-align: center; */
+    margin-left: 10px;
+    background-image: url(../src/assets/copy-space-leaves-frame-pink-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.6; */
+    /* width: 100%; */
+    height: 100%;
+    padding: 50px;
+    color: white;
+}
+h1{
+    text-align: center;
+    padding: 30px;
+    color: rgb(118, 15, 15);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+    padding: 30px;
+    text-shadow: 5px 5px rgb(237, 74, 15);
+}
+.content{
+    text-align: center;
+    line-height: 3;
+    font-family: cursive;
+}
+.points{
+    line-height: 3;
+    font-family: cursive;
+}

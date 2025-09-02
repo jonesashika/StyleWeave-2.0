@@ -1,0 +1,56 @@
+.div{
+    background-image: url("../src/assets/imgi_98_bg-10.jpg");
+    width: auto;
+    height: 400px;
+}
+.card{
+    margin-top: -30%;
+    width: 360px;
+    height: 550px;
+    
+}
+.card1{
+    margin-top: -16%;
+    width: 160px;
+    height: 150px;
+    background-image: url("../src/assets/prop.jpg");
+    background-color: red;
+    background-size:cover;
+}
+.card2{
+    margin-top: -23%;
+    width: 480px;
+    height: 150px;
+}
+.card3{
+    margin-top: 5%;
+    width: 350px;
+    height: 180px;
+    background-image: url(../src/assets/imgi_101_taieri.svg);
+    background-color: rgb(104, 7, 81);
+}
+.card4{
+    margin-top: -15%;
+    width: 160px;
+    height: 150px;
+    
+}
+.card5{
+    margin-top: -15%;
+     width: 160px;
+    height: 150px;
+}
+.card6{
+    margin-top: 5%;
+    width:300px ;
+    height: 300px;
+    background-image: url(../src/assets/imgi_100_bg-9.jpg);
+}
+.card7{
+    width: 350px;
+    height: 400px;
+}
+.card8{
+    width: 530px;
+    height: 480px;
+}

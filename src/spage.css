@@ -1,0 +1,63 @@
+.bodyyy{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(238, 206, 217);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 2px;
+    /* background-color: rgb(60, 60, 98); */
+}
+.cardd{
+    width: 300px;
+    height: 250px;
+    position: relative;
+    background-color: aliceblue;
+    padding: 20px 15px;
+    margin: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+}
+.cardd:hover{
+    height: 470px;
+}
+.imgbx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -40px;
+    left: 20px;
+    z-index: 1;
+}
+img{
+    object-fit: cover;
+    image-rendering: crisp-edges;
+    width: 230px;
+    height: 200px;
+    border-radius: 4px;
+}
+.content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+.cardd:hover .content{
+    visibility: visible;
+    margin-top: -40px;
+    transition-delay: 0.4s;
+}
+.dress{
+    color: rgb(245, 82, 134);
+    text-shadow: 1px 1px rgb(231, 191, 141);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

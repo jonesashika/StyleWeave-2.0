@@ -1,0 +1,22 @@
+.hlo{
+    color: aqua;
+}
+.jjj{
+    color: blueviolet;
+}
+.car{
+    width: 150px;
+    height: 150px;
+}
+.item{
+    display: flex;
+}
+.content{
+    display: flex;
+}
+ul{
+    list-style-type:none ;
+}
+.content1{
+    margin-left: 15px;
+}
