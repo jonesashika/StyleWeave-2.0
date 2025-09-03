@@ -29,7 +29,7 @@ const Login = () => {
     <div
       className="w-100 h-157 bg-cover bg-no-repeat"
       style={{
-        backgroundImage: {Background},
+        backgroundImage:`url(${Background})`,
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",

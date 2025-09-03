@@ -28,8 +28,8 @@ const intro = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href='/intro'>Home</Nav.Link>
-                            <Nav.Link href='/aboutus'>About</Nav.Link>
+                            <Nav.Link onClick={()=>navigate("/intro")}>Home</Nav.Link>
+                            <Nav.Link >About</Nav.Link>
                             {/* <Nav.Link href='/contactus'>Contact</Nav.Link> */}
                             <NavDropdown title="Contact" id="contact-nav-dropdown">
                                 <NavDropdown.Item href="/contactus">Email Us</NavDropdown.Item>

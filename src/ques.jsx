@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Faq from './assets/projectimgs/faq.png'
 function FAQ() {
     return (
         <>
@@ -30,7 +31,7 @@ function FAQ() {
                     <img src="../src/assets/projectimgs/anime.png" alt="" style={{ float: 'right', height: 70, width: 90 }} />
                 </Container>
             </Navbar>
-        <div className='flex justify-content-center'><img style={{height:80,width:80,marginTop:30}} src="../src/assets/projectimgs/faq.png" alt="" /><h4 className='text-center p-5'>Frequently Asked Questions</h4></div>
+        <div className='flex justify-content-center'><img style={{height:80,width:80,marginTop:30}} src={Faq} alt="" /><h4 className='text-center p-5'>Frequently Asked Questions</h4></div>
         <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="0">
                 <Accordion.Header>What is your return policy?</Accordion.Header>

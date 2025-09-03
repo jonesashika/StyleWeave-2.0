@@ -5,12 +5,15 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Ficon from './assets/projectimgs/ficon.png'
+import Icon from './assets/projectimgs/shopping.png'
+import Anime from './assets/projectimgs/anime.png'
 const feedback = () => {
     return (
         <>
             <Navbar expand="lg" style={{ marginTop: 0 }}>
                 <Container>
-                    <img src="../src/assets/projectimgs/shopping.png" alt="" style={{ height: 60, width: 50 }} />
+                    <img src={Icon} alt="" style={{ height: 60, width: 50 }} />
                     <Navbar.Brand className=''>Fashion Store</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -27,11 +30,11 @@ const feedback = () => {
 
                         </Nav>
                     </Navbar.Collapse>
-                    <img src="../src/assets/projectimgs/anime.png" alt="" style={{ float: 'right', height: 70, width: 90 }} />
+                    <img src={Anime} alt="" style={{ float: 'right', height: 70, width: 90 }} />
                 </Container>
             </Navbar>
 
-            <div className='flex justify-content-center'><img style={{height:60,width:70,marginTop:30}} src="../src/assets/projectimgs/ficon.png" alt="" /><h4 className='text-center mt-5' style={{ color: 'blue' }}>Feedback of Our Trustful Customers </h4></div>
+            <div className='flex justify-content-center'><img style={{height:60,width:70,marginTop:30}} src={Ficon} alt="" /><h4 className='text-center mt-5' style={{ color: 'blue' }}>Feedback of Our Trustful Customers </h4></div>
             <div className=' p-3 flex flex-wrap gap-4 mt-5' style={{ alignSelf: 'center' }}>
 
                 <Card style={{ width: '18rem' }}>

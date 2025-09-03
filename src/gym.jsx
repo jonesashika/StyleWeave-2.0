@@ -7,13 +7,15 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useNavigate } from 'react-router-dom';
+import Icon from './assets/projectimgs/shopping.png'
+import Anime from './assets/projectimgs/anime.png'
 const spage = () => {
   const navigate = useNavigate();
   return (
     <>
       <Navbar expand="lg" style={{ marginTop: 0 }}>
         <Container>
-          <img src="../src/assets/projectimgs/shopping.png" alt="" style={{ height: 60, width: 50 }} />
+          <img src={Icon} alt="" style={{ height: 60, width: 50 }} />
           <Navbar.Brand className=''>Fashion Store</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -30,7 +32,7 @@ const spage = () => {
 
             </Nav>
           </Navbar.Collapse>
-          <img src="../src/assets/projectimgs/anime.png" alt="" style={{ float: 'right', height: 70, width: 80 }} />
+          <img src={Anime} alt="" style={{ float: 'right', height: 70, width: 80 }} />
         </Container>
       </Navbar>
       <div className='bodyyy'>

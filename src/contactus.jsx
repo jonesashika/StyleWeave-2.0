@@ -6,13 +6,19 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Row, Col } from 'react-bootstrap';
+import Insta from './assets/projectimgs/insta.png'
+import Flipkart from './assets/projectimgs/flip.png'
+import Amazon from './assets/projectimgs/amazon.png'
+import Ajio from './assets/projectimgs/ajio.png'
+import Icon from './assets/projectimgs/shopping.png'
+import Anime from './assets/projectimgs/anime.png'
 const contactus = () => {
     return (
         <>
             <div className=''>
                 <Navbar expand="lg" style={{ marginTop: 0 }}>
                     <Container>
-                        <img src="../src/assets/projectimgs/shopping.png" alt="" style={{ height: 60, width: 50 }} />
+                        <img src={Icon} alt="" style={{ height: 60, width: 50 }} />
                         <Navbar.Brand className=''>Fashion Store</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
@@ -29,7 +35,7 @@ const contactus = () => {
 
                             </Nav>
                         </Navbar.Collapse>
-                        <img src="../src/assets/projectimgs/anime.png" alt="" style={{ float: 'right', height: 70, width: 80 }} />
+                        <img src={Anime} alt="" style={{ float: 'right', height: 70, width: 80 }} />
                     </Container>
                 </Navbar>
                 <div className='text-center bg-no-repeat bg-cover ' style={{ backgroundImage: "url('../src/assets/projectimgs/contactbg.jp')", backgroundSize: '100% 100%', color: 'black', textShadow: '5px 5px 2px pink' }}>
@@ -75,16 +81,16 @@ const contactus = () => {
                 <div className='p-5' style={{ display: 'flex', flexDirection: 'row', gap: 20, justifySelf: 'center' }}>
 
                     <div className='box h-15 w-15 bg-pink-200  p-2.5' style={{ borderRadius: 20 }}>
-                        <img className='instagram ' style={{ height: 35, width: 35, alignSelf: 'center', justifySelf: 'center' }} src="../src/assets/projectimgs/insta.png" alt="" />
+                        <img className='instagram ' style={{ height: 35, width: 35, alignSelf: 'center', justifySelf: 'center' }} src={Insta} alt="" />
                     </div>
                     <div className='box h-15 w-15 bg-pink-200  p-2.5' style={{ borderRadius: 20 }}>
-                        <img className='Flipkart' style={{ height: 35, width: 35, alignSelf: 'center', justifySelf: 'center' }} src="../src/assets/projectimgs/flip.png" alt="" />
+                        <img className='Flipkart' style={{ height: 35, width: 35, alignSelf: 'center', justifySelf: 'center' }} src={Flipkart} alt="" />
                     </div>
                     <div className='box h-15 w-15 bg-pink-200  p-2.5' style={{ borderRadius: 20 }}>
-                        <img className='amazon' style={{ height: 35, width: 35, alignSelf: 'center', justifySelf: 'center' }} src="../src/assets/projectimgs/amazon.png" alt="" />
+                        <img className='amazon' style={{ height: 35, width: 35, alignSelf: 'center', justifySelf: 'center' }} src={Amazon} alt="" />
                     </div>
                     <div className='box h-15 w-15 bg-pink-200  p-2.5' style={{ borderRadius: 20 }}>
-                        <img className='ajio' style={{ height: 35, width: 35, alignSelf: 'center', justifySelf: 'center' }} src="../src/assets/projectimgs/ajio.png" alt="" />
+                        <img className='ajio' style={{ height: 35, width: 35, alignSelf: 'center', justifySelf: 'center' }} src={Ajio} alt="" />
                     </div>
                 </div>
             </div>
