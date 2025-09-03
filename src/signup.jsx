@@ -47,12 +47,12 @@ const Signup = () => {
     <div
       className="text-center bg-cover h-170"
       style={{
-        backgroundImage: "url(https://img.freepik.com/free-photo/young-woman-wearing-colorful-winter-clothes_273609-20939.jpg)",
+        backgroundImage: "url(..src/assets/projectimgs/sbg.jpg)",
         marginTop: 0,
         alignContent: 'center',
       }}
     >
-      <h1 style={{ color: 'purple', fontFamily: 'cursive' }}>SIGN UP</h1>
+      <h1 style={{ color: 'blue', fontFamily: 'cursive' }}>SIGN UP</h1>
       <Form
         noValidate
         onSubmit={handleSubmit}

@@ -3,7 +3,7 @@ import axios from "axios";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
-
+import Background from './assets/projectimgs/background.jpg'
 const Login = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
@@ -29,7 +29,7 @@ const Login = () => {
     <div
       className="w-100 h-157 bg-cover bg-no-repeat"
       style={{
-        backgroundImage: `url(../src/assets/projectimgs/background.jpg)`,
+        backgroundImage: {Background},
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",

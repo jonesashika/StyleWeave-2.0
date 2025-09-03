@@ -207,7 +207,6 @@ import Signup from './signup'
 import Collections from './collection'
 import Vacation from './vacation'
 import Pants from './pants'
-import Form from './cartform'
 import Coord from './coord'
 import Skirts from './skirts'
 import Gym from './gym'
@@ -221,8 +220,9 @@ export const App = () => {
   return (
     <div>
       <Router>
-       <Routes>
+        <Routes>
           <Route exact path='/' element={<Login />} />
+          <Route exact path='/login' element={<Login />} />
           <Route exact path='/intro' element={<Intro />} />
           <Route exact path='/spage' element={<Tweb />} />
           <Route exact path='/signup' element={<Signup />} />
@@ -231,8 +231,7 @@ export const App = () => {
           <Route exact path='/collection' element={<Collections />} />
           <Route exact path='/vacation' element={<Vacation />} />
           <Route exact path='/pants' element={<Pants />} />
-          <Route exact path='/cartform' element={<Form />} />
-          <Route exact path='/coord' element={<Coord />} />
+          <Route exact path='/gym' element={<Gym />} />
           <Route exact path='/coord' element={<Coord />} />
           <Route exact path='/skirts' element={<Skirts />} />
           <Route exact path='/ques' element={<Ques />} />
@@ -243,7 +242,7 @@ export const App = () => {
           <Route exact path='/info/:id' element={<Info />} />
           <Route exact path='/info' element={<Info />} />
           <Route exact path='/feedback' element={<Feed />} />
-         </Routes>
+        </Routes>
       </Router>
 
     </div>

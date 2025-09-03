@@ -7,7 +7,15 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Carousel from 'react-bootstrap/Carousel';
-
+import Icon from './assets/projectimgs/shopping.png'
+import Anime from './assets/projectimgs/anime.png'
+import Bg from './assets/projectimgs/bg.jpg'
+import Bg1 from './assets/projectimgs/bg3.jpg'
+import Bg2 from './assets/projectimgs/bg2.jpg'
+import Insta from './assets/projectimgs/insta.png'
+import Flipkart from './assets/projectimgs/flip.png'
+import Amazon from './assets/projectimgs/amazon.png'
+import Ajio from './assets/projectimgs/ajio.png'
 
 const intro = () => {
     const navigate = useNavigate()
@@ -15,7 +23,7 @@ const intro = () => {
         <>
             <Navbar expand="lg" style={{ marginTop: 0 }}>
                 <Container>
-                    <img src="../src/assets/projectimgs/shopping.png" alt="" style={{ height: 60, width: 50 }} />
+                    <img src={Icon} alt="" style={{ height: 60, width: 50 }} />
                     <Navbar.Brand className=''>Fashion Store</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -32,15 +40,15 @@ const intro = () => {
 
                         </Nav>
                     </Navbar.Collapse>
-                    <img src="../src/assets/projectimgs/anime.png" alt="" style={{ float: 'right', height: 70, width: 90 }} />
+                    <img src={Anime} alt="" style={{ float: 'right', height: 70, width: 90 }} />
                 </Container>
             </Navbar>
 
 
-            <div style={{ backgroundSize: '100% 100%', alignContent: 'center', marginTop: 0, overflow: 'hidden' }}>
+            <div className='w-100' style={{ backgroundSize: '100% 100%', alignContent: 'center', marginTop: 0,maxWidth:'100%',overflow:'hidden'}}>
                 <Carousel fade>
                     <Carousel.Item>
-                        <img className='img-no-repeat img-cover ' style={{ width: '100%', height: '600px', Size: '100% 100%', alignContent: 'center', marginTop: 0, objectFit: 'fill' }} src="../src/assets/projectimgs/bg.jpg" alt="" />
+                        <img className='img-no-repeat img-cover ' style={{ width: '100%', height: '600px', Size: '100% 100%', alignContent: 'center', marginTop: 0, objectFit: 'fill' }} src={Bg} alt="" />
                         <Carousel.Caption className='p-0'>
 
                             <h1 className='title'>STYLEWEAVE</h1>
@@ -49,7 +57,7 @@ const intro = () => {
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className='img-no-repeat img-cover ' style={{ width: '100%', height: '600px', Size: '100% 100%', alignContent: 'center', marginTop: 0, objectFit: 'fill' }} src="../src/assets/projectimgs/bg3.jpg" alt="" />
+                        <img className='img-no-repeat img-cover ' style={{ width: '100%', height: '600px', Size: '100% 100%', alignContent: 'center', marginTop: 0, objectFit: 'fill' }} src={Bg1} alt="" />
                         {/* <Carousel.Caption className='p-0'>
                             <h1 className='title'>STYLEWEAVE</h1>
                             <p className='heading p-0 '>Where Fashion Meets Individuality</p>
@@ -57,8 +65,8 @@ const intro = () => {
                         {/* </Carousel.Caption> */}
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className='img-no-repeat img-cover ' style={{ width: '100%', height: '600px', Size: '100% 100%', alignContent: 'center', marginTop: 0, objectFit: 'fill' }} src="../src/assets/projectimgs/bg2.jpg
-                        " alt="" />
+                        <img className='img-no-repeat img-cover ' style={{ width: '100%', height: '600px', Size: '100% 100%', alignContent: 'center', marginTop: 0, objectFit: 'fill' }} src={Bg2}
+                         alt="" />
                         {/* <Carousel.Caption className='p-0'> */}
                         {/* <h1 className='title'>STYLEWEAVE</h1> */}
                         {/* <p className='heading p-0 '>Where Fashion Meets Individuality</p> */}
@@ -73,6 +81,7 @@ const intro = () => {
                 <h4>Bodycon Dresses</h4>
                 <h4>Tops</h4>
                 <h4>Vacation Wear</h4>
+                <h4>Pants</h4>
                 <h4>Fitness Wear</h4>
                 <h4>Co-Ord Sets</h4>
                 <h4>Skirts</h4>
@@ -92,16 +101,16 @@ const intro = () => {
             <div className='p-5' style={{ display: 'flex', flexDirection: 'row', gap: 20, justifySelf: 'center' }}>
 
                 <div className='box h-15 w-15 bg-pink-200  p-2.5' style={{ borderRadius: 20 }}>
-                    <a href="https://www.instagram.com/berrylush_com/"><img className='instagram ' style={{ height: 35, width: 35, alignSelf: 'center', justifySelf: 'center' }} src="../src/assets/projectimgs/insta.png" alt="" /></a>
+                    <a href="https://www.instagram.com/berrylush_com/"><img className='instagram ' style={{ height: 35, width: 35, alignSelf: 'center', justifySelf: 'center' }} src={Insta} alt="" /></a>
                 </div>
                 <div className='box h-15 w-15 bg-pink-200  p-2.5' style={{ borderRadius: 20 }}>
-                    <a href=""><img className='Flipkart' style={{ height: 35, width: 35, alignSelf: 'center', justifySelf: 'center' }} src="../src/assets/projectimgs/flip.png" alt="" /></a>
+                    <a href=""><img className='Flipkart' style={{ height: 35, width: 35, alignSelf: 'center', justifySelf: 'center' }} src={Flipkart} alt="" /></a>
                 </div>
                 <div className='box h-15 w-15 bg-pink-200  p-2.5' style={{ borderRadius: 20 }}>
-                    <a href=""><img className='amazon' style={{ height: 35, width: 35, alignSelf: 'center', justifySelf: 'center' }} src="../src/assets/projectimgs/amazon.png" alt="" /></a>
+                    <a href=""><img className='amazon' style={{ height: 35, width: 35, alignSelf: 'center', justifySelf: 'center' }} src={Amazon} alt="" /></a>
                 </div>
                 <div className='box h-15 w-15 bg-pink-200  p-2.5' style={{ borderRadius: 20 }}>
-                    <a href=""><img className='ajio' style={{ height: 35, width: 35, alignSelf: 'center', justifySelf: 'center' }} src="../src/assets/projectimgs/ajio.png" alt="" /></a>
+                    <a href=""><img className='ajio' style={{ height: 35, width: 35, alignSelf: 'center', justifySelf: 'center' }} src={Ajio} alt="" /></a>
                 </div>
             </div>
 

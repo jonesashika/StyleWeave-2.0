@@ -43,7 +43,7 @@ const pants = () => {
                         </div>
 
                         <div className='content text-center'>
-                            <h3 className='dress '>Pink Knit Dress</h3>
+                            <h3 className='dress '>Olive Cropper</h3>
                             <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
                             <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                                 <div className='flex flex-column'>
@@ -76,7 +76,7 @@ const pants = () => {
                         </div>
 
                         <div className='content text-center'>
-                            <h3 className='dress '>Pink Knit Dress</h3>
+                            <h3 className='dress '>Choco Wide-Leg</h3>
                             <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
                             <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                                 <div className='flex flex-column'>
@@ -107,7 +107,7 @@ const pants = () => {
                         </div>
 
                         <div className='content text-center'>
-                            <h3 className='dress '>Pink Knit Dress</h3>
+                            <h3 className='dress '>Taupe Trouser</h3>
                             <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
                             <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                                 <div className='flex flex-column'>
@@ -138,7 +138,7 @@ const pants = () => {
                         </div>
 
                         <div className='content text-center'>
-                            <h3 className='dress '>Pink Knit Dress</h3>
+                            <h3 className='dress '>Terracotta Flare</h3>
                             <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
                             <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                                 <div className='flex flex-column'>
@@ -169,7 +169,7 @@ const pants = () => {
                         </div>
 
                         <div className='content text-center'>
-                            <h3 className='dress '>Pink Knit Dress</h3>
+                            <h3 className='dress '>Cream Cutter</h3>
                             <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
                             <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                                 <div className='flex flex-column'>
@@ -205,7 +205,7 @@ const pants = () => {
                         </div>
 
                         <div className='content text-center'>
-                            <h3 className='dress '>Pink Knit Dress</h3>
+                            <h3 className='dress '>Khaki Cargo</h3>
                             <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
                             <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                                 <div className='flex flex-column'>
@@ -238,7 +238,7 @@ const pants = () => {
                         </div>
 
                         <div className='content text-center'>
-                            <h3 className='dress '>Pink Knit Dress</h3>
+                            <h3 className='dress '>Dark Brown Flare</h3>
                             <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
                             <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                                 <div className='flex flex-column'>
@@ -269,7 +269,7 @@ const pants = () => {
                         </div>
 
                         <div className='content text-center'>
-                            <h3 className='dress '>Pink Knit Dress</h3>
+                            <h3 className='dress '>Lavender Dream</h3>
                             <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
                             <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                                 <div className='flex flex-column'>
@@ -300,7 +300,7 @@ const pants = () => {
                         </div>
 
                         <div className='content text-center'>
-                            <h3 className='dress '>Pink Knit Dress</h3>
+                            <h3 className='dress '>Taupe Trouser</h3>
                             <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
                             <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                                 <div className='flex flex-column'>
@@ -331,7 +331,7 @@ const pants = () => {
                         </div>
 
                         <div className='content text-center'>
-                            <h3 className='dress '>Pink Knit Dress</h3>
+                            <h3 className='dress '>Blue Cargo Chic</h3>
                             <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
                             <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                                 <div className='flex flex-column'>
@@ -367,7 +367,7 @@ const pants = () => {
                         </div>
 
                         <div className='content text-center'>
-                            <h3 className='dress '>Pink Knit Dress</h3>
+                            <h3 className='dress '>Light Wash Jean</h3>
                             <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
                             <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                                 <div className='flex flex-column'>
@@ -401,7 +401,7 @@ const pants = () => {
                         </div>
 
                         <div className='content text-center'>
-                            <h3 className='dress '>Pink Knit Dress</h3>
+                            <h3 className='dress '>Distressed Wide-Leg Jean</h3>
                             <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
                             <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                                 <div className='flex flex-column'>
@@ -433,7 +433,7 @@ const pants = () => {
                         </div>
 
                         <div className='content text-center'>
-                            <h3 className='dress '>Pink Knit Dress</h3>
+                            <h3 className='dress '>Jeans with Green Accent</h3>
                             <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
                             <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                                 <div className='flex flex-column'>
@@ -465,7 +465,7 @@ const pants = () => {
                         </div>
 
                         <div className='content text-center'>
-                            <h3 className='dress '>Pink Knit Dress</h3>
+                            <h3 className='dress '>Flared Jeans</h3>
                             <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
                             <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                                 <div className='flex flex-column'>
@@ -497,7 +497,7 @@ const pants = () => {
                         </div>
 
                         <div className='content text-center'>
-                            <h3 className='dress '>Pink Knit Dress</h3>
+                            <h3 className='dress '>Cargo-Style Jeans</h3>
                             <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
                             <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                                 <div className='flex flex-column'>
