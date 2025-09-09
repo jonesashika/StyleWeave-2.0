@@ -12,7 +12,9 @@ import Amazon from './assets/projectimgs/amazon.png'
 import Ajio from './assets/projectimgs/ajio.png'
 import Icon from './assets/projectimgs/shopping.png'
 import Anime from './assets/projectimgs/anime.png'
+import { useNavigate } from 'react-router-dom';
 const contactus = () => {
+    const navigate = useNavigate()
     return (
         <>
             <div className=''>
@@ -23,14 +25,14 @@ const contactus = () => {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
-                                <Nav.Link href='/intro'>Home</Nav.Link>
-                                <Nav.Link href='/aboutus'>About</Nav.Link>
+                                <Nav.Link  onClick={() => navigate("/intro")}>Home</Nav.Link>
+                                <Nav.Link  onClick={() => navigate("/aboutus")}>About</Nav.Link>
                                 {/* <Nav.Link href='/contactus'>Contact</Nav.Link> */}
                                 <NavDropdown title="Contact" id="contact-nav-dropdown">
-                                    <NavDropdown.Item href="/contactus">Email Us</NavDropdown.Item>
-                                    <NavDropdown.Item href="/ques">FAQs</NavDropdown.Item>
+                                    <NavDropdown.Item  onClick={() => navigate("/contactus")}>Email Us</NavDropdown.Item>
+                                    <NavDropdown.Item  onClick={() => navigate("/ques")}>FAQs</NavDropdown.Item>
                                     <NavDropdown.Divider />
-                                    <NavDropdown.Item href="/feedback">Feedback</NavDropdown.Item>
+                                    <NavDropdown.Item  onClick={() => navigate("/feedback")}>Feedback</NavDropdown.Item>
                                 </NavDropdown>
 
                             </Nav>
@@ -62,18 +64,7 @@ const contactus = () => {
                     </Row>
 
 
-                    <Form style={{ justifySelf: 'center', color: 'maroon' }}>
-                        <h5 className='mb-5' style={{ textDecorationLine: 'underline' }}> Give Your Feedback Here</h5>
-                        <Form.Group className="mb-3 w-80 p-2" controlId="exampleForm.ControlInput1">
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="name@example.com" />
-                        </Form.Group>
-                        <Form.Group className="mb-3 w-80 p-2" controlId="exampleForm.ControlTextarea1">
-                            <Form.Label>Comment</Form.Label>
-                            <Form.Control as="textarea" rows={3} />
-                        </Form.Group>
-                        <Button className='mt-4' variant="outline-warning" >SUBMIT</Button>
-                    </Form>
+                   
                 </div>
             </div>
             <div className='' style={{ marginTop: 0 }}>

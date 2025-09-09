@@ -20,14 +20,14 @@ const collection = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href='/intro'>Home</Nav.Link>
-              <Nav.Link href='/aboutus'>About</Nav.Link>
+              <Nav.Link  onClick={() => navigate("/intro")}>Home</Nav.Link>
+              <Nav.Link  onClick={() => navigate("/aboutus")} >About</Nav.Link>
               {/* <Nav.Link href='/contactus'>Contact</Nav.Link> */}
               <NavDropdown title="Contact" id="contact-nav-dropdown">
-                <NavDropdown.Item href="/contactus">Email Us</NavDropdown.Item>
-                <NavDropdown.Item href="/ques">FAQs</NavDropdown.Item>
+                <NavDropdown.Item  onClick={() => navigate("/contactus")}>Email Us</NavDropdown.Item>
+                <NavDropdown.Item  onClick={() => navigate("/ques")}>FAQs</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/feedback">Feedback</NavDropdown.Item>
+                <NavDropdown.Item  onClick={() => navigate("/feedback")}>Feedback</NavDropdown.Item>
               </NavDropdown>
 
             </Nav>
@@ -43,7 +43,7 @@ const collection = () => {
             </div>
             <div className='content text-center'>
               <h3 className='dress '>Floral Green Top</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.350</strong> <strike>Rs.700</strike> <br /><p className='text-green-600'>(46% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>
@@ -75,7 +75,7 @@ const collection = () => {
             </div>
             <div className='content text-center'>
               <h3 className='dress '>Lace Lovin</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.400</strong> <strike>Rs.900</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>
@@ -105,7 +105,7 @@ const collection = () => {
             </div>
             <div className='content text-center'>
               <h3 className='dress '>Blue Floral Top</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.350</strong> <strike>Rs.700</strike> <br /><p className='text-green-600'>(46% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>
@@ -135,7 +135,7 @@ const collection = () => {
             </div>
             <div className='content text-center'>
               <h3 className='dress '>Sick Tee</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.300</strong> <strike>Rs.800</strike> <br /><p className='text-green-600'>(37% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>
@@ -165,7 +165,7 @@ const collection = () => {
             </div>
             <div className='content text-center'>
               <h3 className='dress '>Boho Shirt</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.1000</strong> <strike>Rs.1500</strike> <br /><p className='text-green-600'>(66% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>
@@ -195,7 +195,7 @@ const collection = () => {
             </div>
             <div className='content text-center'>
               <h3 className='dress '>Mustard Mood</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.500</strong> <strike>Rs.1000</strike> <br /><p className='text-green-600'>(50% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>
@@ -225,7 +225,7 @@ const collection = () => {
             </div>
             <div className='content text-center'>
               <h3 className='dress '>Elegant Puff</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.1000</strong> <strike>Rs.1500</strike> <br /><p className='text-green-600'>(66% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>
@@ -255,7 +255,7 @@ const collection = () => {
             </div>
             <div className='content text-center'>
               <h3 className='dress '>Full Sleeve Crop</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.1500</strong> <strike>Rs.2000</strike> <br /><p className='text-green-600'>(75% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>

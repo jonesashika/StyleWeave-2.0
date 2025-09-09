@@ -20,14 +20,14 @@ const spage = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href='/intro'>Home</Nav.Link>
-              <Nav.Link href='/aboutus'>About</Nav.Link>
+              <Nav.Link  onClick={() => navigate("/intro")}>Home</Nav.Link>
+              <Nav.Link  onClick={() => navigate("/aboutus")}>About</Nav.Link>
               {/* <Nav.Link href='/contactus'>Contact</Nav.Link> */}
               <NavDropdown title="Contact" id="contact-nav-dropdown">
-                <NavDropdown.Item href="/contactus">Email Us</NavDropdown.Item>
-                <NavDropdown.Item href="/ques">FAQs</NavDropdown.Item>
+                <NavDropdown.Item  onClick={() => navigate("/contactus")}>Email Us</NavDropdown.Item>
+                <NavDropdown.Item  onClick={() => navigate("/ques")}>FAQs</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/feedback">Feedback</NavDropdown.Item>
+                <NavDropdown.Item  onClick={() => navigate("/feedback")}>Feedback</NavDropdown.Item>
               </NavDropdown>
 
 
@@ -76,7 +76,7 @@ const spage = () => {
             </div>
             <div className='content'>
               <h3 className='dress name'>Gold Bodycon Dress</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.3550</strong> <strike>Rs.4200</strike> <br /><p className='text-green-600'>(84% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>
@@ -104,7 +104,7 @@ const spage = () => {
             </div>
             <div className='content'>
               <h3 className='dress name'>Pink Elegance Wear</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.2700</strong> <strike>Rs.4000</strike> <br /><p className='text-green-600'>(67% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>
@@ -132,7 +132,7 @@ const spage = () => {
             </div>
             <div className='content'>
               <h3 className='dress name'>Striped Bodycon Wear</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.1100</strong> <strike>Rs.1300</strike> <br /><p className='text-green-600'>(84% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>
@@ -160,7 +160,7 @@ const spage = () => {
             </div>
             <div className='content'>
               <h3 className='dress name'>Black Ruffle Bodycon</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.1200</strong> <strike>Rs.1499</strike> <br /><p className='text-green-600'>(80% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>
@@ -188,7 +188,7 @@ const spage = () => {
             </div>
             <div className='content'>
               <h3 className='dress name'>Pink Satin Bodycon </h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.1000</strong> <strike>Rs.1500</strike> <br /><p className='text-green-600'>(66% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>
@@ -216,7 +216,7 @@ const spage = () => {
             </div>
             <div className='content'>
               <h3 className='dress name'>White Full Bodycon</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.2700</strong> <strike>Rs.4000</strike> <br /><p className='text-green-600'>(67% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>
@@ -244,7 +244,7 @@ const spage = () => {
             </div>
             <div className='content'>
               <h3 className='dress name'>Red Full Bodycon</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.2600</strong> <strike>Rs.3000</strike> <br /><p className='text-green-600'>(86% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>

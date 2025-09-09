@@ -1,4 +1,6 @@
 import React from 'react'
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Container from 'react-bootstrap/Container';
@@ -8,7 +10,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Ficon from './assets/projectimgs/ficon.png'
 import Icon from './assets/projectimgs/shopping.png'
 import Anime from './assets/projectimgs/anime.png'
+import { useNavigate } from 'react-router-dom';
 const feedback = () => {
+    const navigate = useNavigate()
     return (
         <>
             <Navbar expand="lg" style={{ marginTop: 0 }}>
@@ -18,14 +22,14 @@ const feedback = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href='/intro'>Home</Nav.Link>
-                            <Nav.Link href='/aboutus'>About</Nav.Link>
+                            <Nav.Link onClick={() => navigate("/intro")}>Home</Nav.Link>
+                            <Nav.Link onClick={() => navigate("/aboutus")}>About</Nav.Link>
                             {/* <Nav.Link href='/contactus'>Contact</Nav.Link> */}
                             <NavDropdown title="Contact" id="contact-nav-dropdown">
-                                <NavDropdown.Item href="/contactus">Email Us</NavDropdown.Item>
-                                <NavDropdown.Item href="/ques">FAQs</NavDropdown.Item>
+                                <NavDropdown.Item onClick={() => navigate("/contactus")}>Email Us</NavDropdown.Item>
+                                <NavDropdown.Item onClick={() => navigate("/ques")}>FAQs</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="/feedback">Feedback</NavDropdown.Item>
+                                <NavDropdown.Item onClick={() => navigate("/feedback")}>Feedback</NavDropdown.Item>
                             </NavDropdown>
 
                         </Nav>
@@ -34,7 +38,7 @@ const feedback = () => {
                 </Container>
             </Navbar>
 
-            <div className='flex justify-content-center'><img style={{height:60,width:70,marginTop:30}} src={Ficon} alt="" /><h4 className='text-center mt-5' style={{ color: 'blue' }}>Feedback of Our Trustful Customers </h4></div>
+            <div className='flex justify-content-center'><img style={{ height: 60, width: 70, marginTop: 30 }} src={Ficon} alt="" /><h4 className='text-center mt-5' style={{ color: 'blue' }}>Feedback of Our Trustful Customers </h4></div>
             <div className=' p-3 flex flex-wrap gap-4 mt-5' style={{ alignSelf: 'center' }}>
 
                 <Card style={{ width: '18rem' }}>
@@ -96,6 +100,21 @@ const feedback = () => {
                 <div>
                     <h5 className=' p-5' style={{ textAlign: 'center', fontFamily: 'italics', color: 'peru' }}>“We’re sincerely grateful for customers like you who take time to share their thoughts,your kind words genuinely motivate us—thank you!”</h5>
                 </div>
+
+            </div>
+            <div className='text-center'>
+                <Form style={{ justifySelf: 'center', color: 'blue' }}>
+                    <h5 className='mb-5' style={{ textDecorationLine: 'underline' }}> Give Your Feedback Here</h5>
+                    <Form.Group className="mb-3 w-80 p-2" controlId="exampleForm.ControlInput1">
+                        <Form.Label>Email address</Form.Label>
+                        <Form.Control type="email" placeholder="name@example.com" />
+                    </Form.Group>
+                    <Form.Group className="mb-3 w-80 p-2" controlId="exampleForm.ControlTextarea1">
+                        <Form.Label>Comment</Form.Label>
+                        <Form.Control as="textarea" rows={3} />
+                    </Form.Group>
+                    <Button className='mt-4' variant="outline-warning" >SUBMIT</Button>
+                </Form>
             </div>
         </>
     )

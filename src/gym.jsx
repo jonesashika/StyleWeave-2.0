@@ -20,14 +20,14 @@ const spage = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href='/intro'>Home</Nav.Link>
-              <Nav.Link href='/aboutus'>About</Nav.Link>
+              <Nav.Link  onClick={() => navigate("/intro")}>Home</Nav.Link>
+              <Nav.Link  onClick={() => navigate("/aboutus")}>About</Nav.Link>
               {/* <Nav.Link href='/contactus'>Contact</Nav.Link> */}
               <NavDropdown title="Contact" id="contact-nav-dropdown">
-                <NavDropdown.Item href="/contactus">Email Us</NavDropdown.Item>
-                <NavDropdown.Item href="/ques">FAQs</NavDropdown.Item>
+                <NavDropdown.Item  onClick={() => navigate("/contactus")}>Email Us</NavDropdown.Item>
+                <NavDropdown.Item  onClick={() => navigate("/ques")}>FAQs</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/feedback">Feedback</NavDropdown.Item>
+                <NavDropdown.Item  onClick={() => navigate("/feedback")}>Feedback</NavDropdown.Item>
               </NavDropdown>
 
             </Nav>
@@ -44,7 +44,7 @@ const spage = () => {
             </div>
             <div className='content text-center'>
               <h3 className='dress '>Vibrant Vibes</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.2800</strong> <strike>Rs.3500</strike> <br /><p className='text-green-600'>(80% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>
@@ -75,7 +75,7 @@ const spage = () => {
             </div>
             <div className='content'>
               <h3 className='dress name'>Blue Crush</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.2500</strong> <strike>Rs.4000</strike> <br /><p className='text-green-600'>(62% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>
@@ -103,7 +103,7 @@ const spage = () => {
             </div>
             <div className='content'>
               <h3 className='dress name'>Soccer Chic</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.1800</strong> <strike>Rs.2000</strike> <br /><p className='text-green-600'>(90% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>
@@ -131,7 +131,7 @@ const spage = () => {
             </div>
             <div className='content'>
               <h3 className='dress name'>Lime Lovin'</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.2150</strong> <strike>Rs.2700</strike> <br /><p className='text-green-600'>(79% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>
@@ -159,7 +159,7 @@ const spage = () => {
             </div>
             <div className='content'>
               <h3 className='dress name'>Blue Floral Fit</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.2700</strong> <strike>Rs.4000</strike> <br /><p className='text-green-600'>(67% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>
@@ -187,7 +187,7 @@ const spage = () => {
             </div>
             <div className='content'>
               <h3 className='dress name'>Peachy Fit</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.2600</strong> <strike>Rs.3000</strike> <br /><p className='text-green-600'>(86% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>
@@ -215,7 +215,7 @@ const spage = () => {
             </div>
             <div className='content'>
               <h3 className='dress name'>Burnt Orange Boxing Set</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.2200</strong> <strike>Rs.2500</strike> <br /><p className='text-green-600'>(88% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>
@@ -243,7 +243,7 @@ const spage = () => {
             </div>
             <div className='content'>
               <h3 className='dress name'>Gray&Sage Gym Set</h3>
-              <strong>  Rs.2500</strong> <strike>Rs.4500</strike> <br /><p className='text-green-600'>(44% Discount)</p><br />
+              <strong>  Rs.2700</strong> <strike>Rs.4000</strike> <br /><p className='text-green-600'>(67% Discount)</p><br />
               <div className='flex justify-content-center ' style={{ marginTop: -35 }}>
                 <div className='flex flex-column'>
                   <strong>Material:</strong>

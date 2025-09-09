@@ -5,7 +5,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Icon from './assets/projectimgs/shopping.png'
 import Anime from './assets/projectimgs/anime.png'
+import { useNavigate } from 'react-router-dom';
 const aboutus = () => {
+    const navigate = useNavigate()
     return (
         <div>
             <Navbar expand="lg" style={{ marginTop: 0 }}>
@@ -15,14 +17,14 @@ const aboutus = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href='/intro'>Home</Nav.Link>
-                            <Nav.Link href='/aboutus'>About</Nav.Link>
+                            <Nav.Link  onClick={() => navigate("/intro")}>Home</Nav.Link>
+                            <Nav.Link  onClick={() => navigate("/aboutus")}>About</Nav.Link>
                             {/* <Nav.Link href='/contactus'>Contact</Nav.Link> */}
                             <NavDropdown title="Contact" id="contact-nav-dropdown">
-                                <NavDropdown.Item href="/contactus">Email Us</NavDropdown.Item>
-                                <NavDropdown.Item href="/ques">FAQs</NavDropdown.Item>
+                                <NavDropdown.Item  onClick={() => navigate("/contactus")}>Email Us</NavDropdown.Item>
+                                <NavDropdown.Item  onClick={() => navigate("/ques")}>FAQs</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="/feedback">Feedback</NavDropdown.Item>
+                                <NavDropdown.Item  onClick={() => navigate("/feedback")}>Feedback</NavDropdown.Item>
                             </NavDropdown>
 
                         </Nav>
