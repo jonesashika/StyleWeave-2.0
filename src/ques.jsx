@@ -7,13 +7,15 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Faq from './assets/projectimgs/faq.png'
 import { useNavigate } from 'react-router-dom';
+import Icon from './assets/projectimgs/shopping.png'
+import Anime from './assets/projectimgs/anime.png'
 function FAQ() {
     const navigate = useNavigate()
     return (
         <>
          <Navbar expand="lg" style={{ marginTop: 0 }}>
                 <Container>
-                    <img src="../src/assets/projectimgs/shopping.png" alt="" style={{ height: 60, width: 50 }} />
+                    <img src={Icon} alt="" style={{ height: 60, width: 50 }} />
                     <Navbar.Brand className=''>Fashion Store</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -30,10 +32,10 @@ function FAQ() {
 
                         </Nav>
                     </Navbar.Collapse>
-                    <img src="../src/assets/projectimgs/anime.png" alt="" style={{ float: 'right', height: 70, width: 90 }} />
+                    <img src={Anime} alt="" style={{ float: 'right', height: 70, width: 90 }} />
                 </Container>
             </Navbar>
-        <div className='flex justify-content-center'><img style={{height:80,width:80,marginTop:30}} src={Faq} alt="" /><h4 className='text-center p-5'>Frequently Asked Questions</h4></div>
+        <div className='flex justify-content-center'><img style={{height:80,width:80,marginTop:-15,marginRight:-5}} src={Faq} alt="" /><h4 className='text-center p-5no-wrap'>Frequently Asked Questions</h4></div>
         <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="0">
                 <Accordion.Header>What is your return policy?</Accordion.Header>

@@ -29,7 +29,7 @@ const Login = () => {
     <div
       className="w-100 h-157 bg-cover bg-no-repeat"
       style={{
-        backgroundImage:`url(${Background})`,
+        backgroundImage: `url(${Background})`,
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -68,7 +68,7 @@ const Login = () => {
         <label htmlFor="floatingPasswordCustom">Password</label>
       </Form.Floating>
       <p className="mt-3">
-        Don't have an account? <a href="./signup">Sign up</a>
+        Don't have an account? <a style={{color:'blue',textDecorationColor:'blue',textDecorationLine:'underline'}} onClick={() => navigate("/signup")}>Sign up</a>
       </p>
       <Button className="mt-3" variant="outline-danger" onClick={handleSubmit}>
         SUBMIT

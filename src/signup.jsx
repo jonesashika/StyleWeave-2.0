@@ -45,14 +45,18 @@ const Signup = () => {
 
   return (
     <div
-      className="text-center bg-cover h-170"
+      className="text-center bg-cover h-180"
       style={{
         backgroundImage: `url(${Sbg})`,
         marginTop: 0,
         alignContent: 'center',
+        objectFit: 'cover',
+        backgroundSize: 'cover',
+        backgroundPosition:'center',
+        backgroundrepeat: 'norepeat'
       }}
     >
-      <h1 style={{ color: 'blue', fontFamily: 'cursive' }}>SIGN UP</h1>
+      <h1 style={{ color: 'blue', fontFamily: 'cursive', marginTop: 0 }}>SIGN UP</h1>
       <Form
         noValidate
         onSubmit={handleSubmit}
@@ -63,7 +67,7 @@ const Signup = () => {
           flexDirection: 'column',
         }}
       >
-        <Form.Group className="mb-3 w-90 p-4">
+        <Form.Group className="mb-3 w-85 p-3">
           <Form.Control
             name="name"
             type="text"
@@ -77,7 +81,7 @@ const Signup = () => {
             {errors.name}
           </Form.Control.Feedback>
         </Form.Group>
-        <Form.Group className="mb-3 w-90 p-4">
+        <Form.Group className="mb-3 w-85 p-3">
           <Form.Control
             name="email"
             type="email"
@@ -91,7 +95,7 @@ const Signup = () => {
             {errors.email}
           </Form.Control.Feedback>
         </Form.Group>
-        <Form.Group className="mb-3 w-90 p-4">
+        <Form.Group className="mb-3 w-85 p-3">
           <Form.Control
             name="password"
             type="password"
@@ -105,7 +109,7 @@ const Signup = () => {
             {errors.password}
           </Form.Control.Feedback>
         </Form.Group>
-        <Form.Group className="mb-3 w-90 p-4">
+        <Form.Group className="mb-2 w-85 p-3">
           <Form.Control
             name="phone"
             type="text"
@@ -126,7 +130,7 @@ const Signup = () => {
           Sign Up
         </Button>
       </Form>
-    </div>
+    </div >
   );
 };
 

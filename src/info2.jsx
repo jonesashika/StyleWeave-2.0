@@ -2,6 +2,7 @@ import axios from "axios";
 import { Button, Modal, Table } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 // import React, { useState } from "react";
+import { Card, Row, Col } from 'react-bootstrap';
 import React, { useEffect, useState } from 'react';
 const App = () => {
   const [value, setValue] = useState([]);
@@ -47,54 +48,32 @@ const App = () => {
       {loading ? (
         <p className="text-center mt-4">Loading...</p>
       ) : (
-        <Table striped bordered hover style={{ marginTop: "50px" }}>
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>Name</th>
-              <th>Phone Number</th>
-              <th>Address</th>
-              <th>Quantity</th>
-              <th>Size</th>
-              <th>Payment</th>
-              <th>Actions</th> 
-            </tr>
-          </thead>
-          <tbody>
-            {value.map((kk) => (
-              <tr key={kk.id}>
-                <td>{kk.id}</td>
-                <td>{kk.Name}</td>
-                <td>{kk.Phone}</td>
-                <td>{kk.Address}</td>
-                <td>{kk.Quantity}</td>
-                <td>{kk.Size}</td>
-                <td>{kk.Payment}</td>
-                <td>
-                  <Button
-                    variant="warning"
-                    size="sm"
-                    onClick={() => navigate(`/info/${kk.id}`)}
-                  >
-                   ✏ Edit
-                  </Button>{" "}
-                  <Button
-                    variant="danger"
-                    size="sm"
-                    onClick={() => handleShow(kk.id)}
-                  >
-                    🗑Delete
-                  </Button>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </Table>
+        <Row xs={1} className="g-3">
+          {value.map((kk) => (
+            <Col key={kk.id}>
+              <Card>
+                <Card.Body>
+                  <Card.Title>{kk.Name}</Card.Title>
+                  <Card.Text>
+                    <strong>Id:</strong> {kk.id}<br />
+                    <strong>Phone:</strong> {kk.Phone}<br />
+                    <strong>Address:</strong> {kk.Address}<br />
+                    <strong>Quantity:</strong> {kk.Quantity}<br />
+                    <strong>Size:</strong> {kk.Size}<br />
+                    <strong>Payment:</strong> {kk.Payment}
+                  </Card.Text>
+                  <Button variant="warning" size="sm" onClick={() => navigate(`/info/${kk.id}`)}>✏ Edit</Button>{" "}
+                  <Button variant="danger" size="sm" onClick={() => handleShow(kk.id)}>🗑 Delete</Button>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
       )}
 
-      <Button className="mt-3" onClick={() => navigate("/create")}>
+      <div style={{justifySelf:'center'}}><Button className="mt-3" onClick={() => navigate("/create")}>
         Create
-      </Button>
+      </Button></div>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
@@ -106,7 +85,7 @@ const App = () => {
             Close
           </Button>
           <Button variant="danger" onClick={deleteFn}>
-           🗑 Delete
+            🗑 Delete
           </Button>
         </Modal.Footer>
       </Modal>

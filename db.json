@@ -10,15 +10,6 @@
       "Payment": "Online"
     },
     {
-      "id": "9f03",
-      "Name": "teenu",
-      "Phone": "09150889567",
-      "Address": "19/50, church street, koottapuli, thirunelveli district, tamilnadi",
-      "Quantity": "3",
-      "Size": "M",
-      "Payment": ""
-    },
-    {
       "id": "7045",
       "Name": "jones",
       "Phone": "969843787",
@@ -28,8 +19,17 @@
       "Payment": "COD"
     },
     {
-      "id": "572a",
-      "Name": "Aysha",
+      "id": "3b8c",
+      "Name": "teenu ",
+      "Phone": "09698652778",
+      "Address": "19/50, church street, koottapuli, thirunelveli district, tamilnadi",
+      "Quantity": "3",
+      "Size": "XL",
+      "Payment": "COD"
+    },
+    {
+      "id": "9e4e",
+      "Name": "ashish",
       "Phone": "07626891651",
       "Address": "123,church street,kk",
       "Quantity": "2",
