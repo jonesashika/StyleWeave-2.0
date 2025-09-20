@@ -10,7 +10,7 @@ import Aboutbg from './assets/projectimgs/aboutbg.jpg'
 const aboutus = () => {
     const navigate = useNavigate()
     return (
-        <div>
+        <div className=' bg-no-repeat w-100 bg-cover' style={{ backgroundImage: `url(https://png.pngtree.com/background/20210714/original/pngtree-beautiful-elegant-pink-red-purple-watercolor-smudge-background-picture-image_1220864.jpg)` }}>
             <Navbar expand="lg" style={{ marginTop: 0 }}>
                 <Container>
                     <img src={Icon} alt="" style={{ height: 60, width: 50 }} />
@@ -34,8 +34,9 @@ const aboutus = () => {
                 </Container>
             </Navbar>
 
+                 
             <div className=' bg-no-repeat w-100 bg-cover' style={{ backgroundImage: `url(https://png.pngtree.com/background/20210714/original/pngtree-beautiful-elegant-pink-red-purple-watercolor-smudge-background-picture-image_1220864.jpg)` }}>
-                <h2 className='text-center bg-cover bg-center bg-no-repeat' style={{ color: 'purple',backgroundImage:`url(${Aboutbg})`,height:400,width:'auto',objectFit:'contain',fontSize:50 }}>About Us</h2>
+                <h2 className='text-center bg-cover bg-center bg-no-repeat' style={{ color: 'purple',backgroundImage:`url(${Aboutbg})`,height:450,width:'auto',objectFit:'contain',fontSize:50 }}>About Us</h2>
                 <div className='p-4'>
                     <h5 style={{ color: 'purple' }}>Welcome to the Styleweave Universe</h5>
                     Hey gorgeous! Welcome to Berrylush — your style playground where bold meets beautiful and fashion is always fun. We’re here to sprinkle a little magic into your wardrobe with cute, high-quality, and totally affordable pieces that keep your vibe on full sparkle. Think of us as your fashion BFF, cheering you on to define your own style moment.

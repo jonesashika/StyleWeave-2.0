@@ -12,7 +12,7 @@ import Anime from './assets/projectimgs/anime.png'
 function FAQ() {
     const navigate = useNavigate()
     return (
-        <>
+        <div className=' bg-no-repeat w-100 bg-cover' style={{ backgroundImage: `url(https://png.pngtree.com/background/20210714/original/pngtree-beautiful-elegant-pink-red-purple-watercolor-smudge-background-picture-image_1220864.jpg)` }}>
          <Navbar expand="lg" style={{ marginTop: 0 }}>
                 <Container>
                     <img src={Icon} alt="" style={{ height: 60, width: 50 }} />
@@ -110,7 +110,7 @@ function FAQ() {
                 </Accordion.Body>
             </Accordion.Item>
         </Accordion>
-        </>
+        </div>
     );
 }
 

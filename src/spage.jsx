@@ -11,6 +11,8 @@ import Icon from './assets/projectimgs/shopping.png'
 import Anime from './assets/projectimgs/anime.png'
 const spage = () => {
   const navigate = useNavigate();
+ 
+
   return (
     <>
       <Navbar expand="lg" style={{ marginTop: 0 }}>
@@ -20,14 +22,14 @@ const spage = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link  onClick={() => navigate("/intro")}>Home</Nav.Link>
-              <Nav.Link  onClick={() => navigate("/aboutus")}>About</Nav.Link>
+              <Nav.Link onClick={() => navigate("/intro")}>Home</Nav.Link>
+              <Nav.Link onClick={() => navigate("/aboutus")}>About</Nav.Link>
               {/* <Nav.Link href='/contactus'>Contact</Nav.Link> */}
               <NavDropdown title="Contact" id="contact-nav-dropdown">
-                <NavDropdown.Item  onClick={() => navigate("/contactus")}>Email Us</NavDropdown.Item>
-                <NavDropdown.Item  onClick={() => navigate("/ques")}>FAQs</NavDropdown.Item>
+                <NavDropdown.Item onClick={() => navigate("/contactus")}>Email Us</NavDropdown.Item>
+                <NavDropdown.Item onClick={() => navigate("/ques")}>FAQs</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item  onClick={() => navigate("/feedback")}>Feedback</NavDropdown.Item>
+                <NavDropdown.Item onClick={() => navigate("/feedback")}>Feedback</NavDropdown.Item>
               </NavDropdown>
 
 

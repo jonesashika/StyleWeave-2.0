@@ -14,7 +14,7 @@ import { useNavigate } from 'react-router-dom';
 const feedback = () => {
     const navigate = useNavigate()
     return (
-        <>
+        <div className=' bg-no-repeat w-100 bg-cover' style={{ backgroundImage: `url(https://png.pngtree.com/background/20210714/original/pngtree-beautiful-elegant-pink-red-purple-watercolor-smudge-background-picture-image_1220864.jpg)` }}>
             <Navbar expand="lg" style={{ marginTop: 0 }}>
                 <Container>
                     <img src={Icon} alt="" style={{ height: 60, width: 50 }} />
@@ -98,7 +98,7 @@ const feedback = () => {
 
                 </Card>
                 <div>
-                    <h5 className=' p-5' style={{ textAlign: 'center', fontFamily: 'italics', color: 'peru' }}>“We’re sincerely grateful for customers like you who take time to share their thoughts,your kind words genuinely motivate us—thank you!”</h5>
+                    <h5 className=' p-5' style={{ textAlign: 'center', fontFamily: 'italics', color: 'purple' }}>“We’re sincerely grateful for customers like you who take time to share their thoughts,your kind words genuinely motivate us—thank you!”</h5>
                 </div>
 
             </div>
@@ -113,10 +113,10 @@ const feedback = () => {
                         <Form.Label>Comment</Form.Label>
                         <Form.Control as="textarea" rows={3} />
                     </Form.Group>
-                    <Button className='mt-4' variant="outline-warning" >SUBMIT</Button>
+                    <Button className='mt-4' variant="info" >SUBMIT</Button>
                 </Form>
             </div>
-        </>
+        </div>
     )
 }
 
