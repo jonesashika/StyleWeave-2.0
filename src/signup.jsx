@@ -30,6 +30,11 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const newErrors = validate();  
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return; 
+    }
     const newUser = { Name: name, Email: email, Password: password, Phone: phone };
     const users = JSON.parse(localStorage.getItem("users")) || [];
     if (users.some(u => u.Email === email)) {
@@ -52,7 +57,7 @@ const Signup = () => {
         alignContent: 'center',
         objectFit: 'cover',
         backgroundSize: 'cover',
-        backgroundPosition:'center',
+        backgroundPosition: 'center',
         backgroundrepeat: 'norepeat'
       }}
     >

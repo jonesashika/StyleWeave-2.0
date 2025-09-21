@@ -61,7 +61,7 @@ const vacation = () => {
                 </div>
               </div>
               <div className='flex mt-2 justify-content-center gap-2 '>
-                <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/info3")}>Add to Cart </Button>
+                <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/editcomponent")}>Add to Cart </Button>
                 <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/info3")}>Buy Now</Button>
 
               </div>
@@ -92,7 +92,7 @@ const vacation = () => {
                 </div>
               </div>
               <div className='flex mt-2 justify-content-center gap-2 '>
-                <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/info3")}>Add to Cart </Button>
+                <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/editcomponent")}>Add to Cart </Button>
                 <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/info3")}>Buy Now</Button>
 
               </div>
@@ -122,7 +122,7 @@ const vacation = () => {
                 </div>
               </div>
               <div className='flex mt-2 justify-content-center gap-2 '>
-                <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/info3")} >Add to Cart </Button>
+                <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/editcomponent")} >Add to Cart </Button>
                 <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/info3")}>Buy Now</Button>
 
               </div>
@@ -152,7 +152,7 @@ const vacation = () => {
                 </div>
               </div>
               <div className='flex mt-2 justify-content-center gap-2 '>
-                <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/info3")}>Add to Cart </Button>
+                <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/editcomponent")}>Add to Cart </Button>
                 <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/info3")}>Buy Now</Button>
 
               </div>
@@ -182,7 +182,7 @@ const vacation = () => {
                 </div>
               </div>
               <div className='flex mt-2 justify-content-center gap-2 '>
-                <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/info3")}>Add to Cart </Button>
+                <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/editcomponent")}>Add to Cart </Button>
                 <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/info3")}>Buy Now</Button>
 
               </div>
@@ -212,7 +212,7 @@ const vacation = () => {
                 </div>
               </div>
               <div className='flex mt-2 justify-content-center gap-2 '>
-                <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/info3")}>Add to Cart </Button>
+                <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/editcomponent")}>Add to Cart </Button>
                 <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/info3")}>Buy Now</Button>
 
               </div>
@@ -242,7 +242,7 @@ const vacation = () => {
                 </div>
               </div>
               <div className='flex mt-2 justify-content-center gap-2 '>
-                <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/info3")} >Add to Cart </Button>
+                <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/editcomponent")} >Add to Cart </Button>
                 <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/info3")} >Buy Now</Button>
 
               </div>
@@ -272,7 +272,7 @@ const vacation = () => {
                 </div>
               </div>
               <div className='flex mt-2 justify-content-center gap-2 '>
-                <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/info3")}>Add to Cart </Button>
+                <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/editcomponent")}>Add to Cart </Button>
                 <Button className='h-auto w-auto' variant='outline-dark' onClick={() => navigate("/info3")}>Buy Now</Button>
 
               </div>

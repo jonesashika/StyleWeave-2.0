@@ -215,7 +215,8 @@ import Infoo from './info2'
 import Infooo from './info3'
 import Ques from './ques'
 import Feed from './feedback'
-
+import Edit from './editcomponent'
+import Cart from './cart'
 export const App = () => {
   return (
     <div>
@@ -236,12 +237,14 @@ export const App = () => {
           <Route exact path='/skirts' element={<Skirts />} />
           <Route exact path='/ques' element={<Ques />} />
           <Route exact path='/info3' element={<Infooo />} />
-          <Route exact path='/info2' element={<Infoo />} />
-          <Route exact path='/list' element={<Infoo />} />
-          <Route exact path='/create' element={<Infooo />} />
-          <Route exact path='/info/:id' element={<Info />} />
-          <Route exact path='/info' element={<Info />} />
+          {/* <Route exact path='/info2' element={<Infoo />} /> */}
+          {/* <Route exact path='/list' element={<Infoo />} /> */}
+          {/* <Route exact path='/create' element={<Infooo />} /> */}
+          {/* <Route exact path='/info/:id' element={<Info />} /> */}
+          {/* <Route exact path='/info' element={<Info />} /> */}
           <Route exact path='/feedback' element={<Feed />} />
+          <Route exact path='/editcomponent' element={<Edit />} />
+          <Route exact path='/cart' element={<Cart />} />
         </Routes>
       </Router>
 

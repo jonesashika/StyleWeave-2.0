@@ -52,7 +52,7 @@ const intro = () => {
         },
         {
             className: 'image6',
-            src: 'https://static.cilory.com/734559-large_default/multicolour-printed-casual-co-ordinate-sets.jpg.webp',
+            src: 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTrdjPUBUvHQ5oyCnsFAjpZr-yl_UKzv2ErHwShEjJ25p0ZMXG6PtNRiVYAuCfnHKyy7696ZRXHO4QjAzJcfaE7_9vCLAzicK-j70YHhOQ',
             alt: 'Coord',
             path: '/coord',
         },
@@ -96,7 +96,7 @@ const intro = () => {
                         <Carousel.Caption className='p-0'>
 
                             <h1 className='title text-center'>STYLEWEAVE</h1>
-                            <p className='heading p-0 text-center'>Where Fashion Meets Individuality</p>
+                            <p className='heading p-0 text-center '>Where Fashion Meets Individuality</p>
                             {/* <button className='button1' onClick={() => navigate('/spage')} ><strong>Our Collections</strong></button> */}
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -119,7 +119,7 @@ const intro = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>
-            <h3 className='vibe text-center p-2 mt-5' style={{ fontFamily: 'Noto Sans',fontSize:40 }}>What's Your Vibe</h3>
+            <h3 className='vibe text-center p-2 mt-5' style={{ fontFamily: 'fantasy',fontSize:40 }}>What's Your Vibe 💃✨</h3>
             {/* <marquee behavior="" direction="" scrollamount="20s"> */}
             <div className='dresses mt-2 mb-2 flex flex-row gap-4'>
                 <h4>Bodycon Dresses</h4>

@@ -37,7 +37,7 @@
     z-index: 1;
 }
 img{
-    object-fit: cover;
+    object-fit: fill;
     image-rendering: crisp-edges;
     width: 230px;
     height: 200px;

@@ -18,30 +18,30 @@ const App = () => {
     setShow(true);
   };
 
-  const fetchData = async () => {
-    try {
-      const response = await axios.get("http://localhost:3007/posts");
-      setValue(response?.data);
-    } catch (error) {
-      console.error(error);
-    } finally {
-      setLoading(false);
-    }
-  };
+  // const fetchData = async () => {
+  //   try {
+  //     const response = await axios.get("http://localhost:3007/posts");
+  //     setValue(response?.data);
+  //   } catch (error) {
+  //     console.error(error);
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
-  const deleteFn = () => {
-    axios
-      .delete(`http://localhost:3007/posts/${delID}`)
-      .then(() => {
-        fetchData();
-        handleClose();
-      })
-      .catch((err) => console.log(err));
-  };
+  // const deleteFn = () => {
+  //   axios
+  //     .delete(`http://localhost:3007/posts/${delID}`)
+  //     .then(() => {
+  //       fetchData();
+  //       handleClose();
+  //     })
+  //     .catch((err) => console.log(err));
+  // };
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
   return (
     <div>

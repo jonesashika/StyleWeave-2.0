@@ -7,8 +7,6 @@ import Container from 'react-bootstrap/Container';
 import { useNavigate, useParams } from 'react-router-dom';
 
 const EditFormComponent = () => {
-  const { id } = useParams();
-
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
@@ -17,45 +15,62 @@ const EditFormComponent = () => {
   const [payment, setPayment] = useState("");
 
   const navigate = useNavigate();
-
-  const fetchData = async () => {
-    try {
-      const response = await axios.get(`http://localhost:3007/posts/${id}`);
-      const data = response?.data;
-      setName(data?.Name || "");
-      setPhone(data?.Phone || "");
-      setAddress(data?.Address || "");
-      setQuantity(data?.Order || "");
-      setSize(data?.Order || "");
-      setPayment(data?.Order || "");
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
   const handleSubmitFn = (e) => {
     e.preventDefault();
-    axios
-      .patch(`http://localhost:3007/posts/${id}`, {
-        Name: name,
-        Phone: phone,
-        Address: address,
-        Quantity: quantity,
-        Size: size,
-        Payment: payment,
-      })
-      .then((res) => {
-        navigate('/list');
-        console.log(res?.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+
+    // you might want validation here ...
+
+    const formData = {
+      name,
+      phone,
+      address,
+      quantity,
+      size,
+      payment
+    };
+
+    // pass formData via state
+    navigate("/list", { state: formData });
   };
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // const fetchData = async () => {
+  //   try {
+  //     const response = await axios.get(`http://localhost:3007/posts/${id}`);
+  //     const data = response?.data;
+  //     setName(data?.Name || "");
+  //     setPhone(data?.Phone || "");
+  //     setAddress(data?.Address || "");
+  //     setQuantity(data?.Order || "");
+  //     setSize(data?.Order || "");
+  //     setPayment(data?.Order || "");
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  // };
+
+  // const handleSubmitFn = (e) => {
+  //   e.preventDefault();
+  //   axios
+  //     .patch(`http://localhost:3007/posts/${id}`, {
+  //       Name: name,
+  //       Phone: phone,
+  //       Address: address,
+  //       Quantity: quantity,
+  //       Size: size,
+  //       Payment: payment,
+  //     })
+  //     .then((res) => {
+  //       navigate('/list');
+  //       console.log(res?.data);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // };
+
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
   return (
     <Container className="d-flex justify-content-center align-items-center ">
@@ -99,7 +114,7 @@ const EditFormComponent = () => {
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicOrder">
             <Form.Select
-             placeholder="Your Size"
+              placeholder="Your Size"
               value={size}
               onChange={(e) => setSize(e.target.value)}
             >
@@ -126,8 +141,8 @@ const EditFormComponent = () => {
             <Button variant="primary" type="submit">
               Submit
             </Button>
-            <Button onClick={() => navigate('/list')} variant="secondary">
-              Back to List
+            <Button onClick={() => navigate('/intro')} variant="secondary">
+              Back to Collections
             </Button>
           </div>
         </Form>

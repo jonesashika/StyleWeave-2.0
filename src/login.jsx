@@ -12,6 +12,10 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!email.trim() || !password.trim()) {
+      setError("Email and Password are required");
+      return;
+    }
     const users = JSON.parse(localStorage.getItem("users")) || [];
     const foundUser = users.find(
       (u) => u.Email === email && u.Password === password
@@ -27,7 +31,7 @@ const Login = () => {
 
   return (
     <div
-      className="w-100 h-157 bg-cover bg-no-repeat"
+      className="w-100 h-190 bg-cover bg-no-repeat"
       style={{
         backgroundImage: `url(${Background})`,
         display: "flex",
@@ -68,7 +72,7 @@ const Login = () => {
         <label htmlFor="floatingPasswordCustom">Password</label>
       </Form.Floating>
       <p className="mt-3">
-        Don't have an account? <a style={{color:'blue',textDecorationColor:'blue',textDecorationLine:'underline'}} onClick={() => navigate("/signup")}>Sign up</a>
+        Don't have an account? <a style={{ color: 'blue', textDecorationColor: 'blue', textDecorationLine: 'underline' }} onClick={() => navigate("/signup")}>Sign up</a>
       </p>
       <Button className="mt-3" variant="outline-danger" onClick={handleSubmit}>
         SUBMIT

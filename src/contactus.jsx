@@ -42,7 +42,7 @@ const contactus = () => {
                     </Container>
                 </Navbar>
                 <div className='text-center bg-no-repeat bg-cover '>
-                    <h2 className='text-center p-4 ' style={{ color: '#b8495fff' }}>Contact Us</h2>
+                    <h2 className='text-center p-4 ' style={{ color: '#b8495fff',fontSize:50 }}>Contact Us</h2>
 
                     <Row className='g-0'>
                         <Col xs={12} sm={6} md={6}>
@@ -51,7 +51,7 @@ const contactus = () => {
 
                         </Col>
                         <Col xs={12} sm={6} md={6}>
-                            <p className='p-2 mt-5 ' style={{ lineHeight: 3, color: '#d21a5aff' }}>At Berrylush, we are dedicated to delivering quality service and offering our customers personalized attention. <br />
+                            <b className='p-2 mt-5 ' style={{ lineHeight: 3, color: '#d21a5aff' }}>At Berrylush, we are dedicated to delivering quality service and offering our customers personalized attention. <br />
 
                                 Feel free to reach out if there's anything we can assist with, improve upon or if you simply want to discuss fashion! <br />
 
@@ -59,8 +59,8 @@ const contactus = () => {
 
                                 <strong>📧Email:</strong> support@berrylush.com (9 AM to 6 PM, Monday to Friday) <br />
                                 <strong>📞Call:</strong> 011-41133886 (10 AM to 5 PM, Monday to Friday) <br />
-                                <strong>WhatsApp:</strong> +918287765980 (9 AM to 6 PM, Monday to Friday) <br />
-                            </p>
+                                <strong>📱WhatsApp:</strong> +918287765980 (9 AM to 6 PM, Monday to Friday) <br />
+                            </b>
                         </Col>
                     </Row>
 

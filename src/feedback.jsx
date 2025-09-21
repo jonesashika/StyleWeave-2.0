@@ -14,7 +14,7 @@ import { useNavigate } from 'react-router-dom';
 const feedback = () => {
     const navigate = useNavigate()
     return (
-        <div className=' bg-no-repeat w-100 bg-cover' style={{ backgroundImage: `url(https://png.pngtree.com/background/20210714/original/pngtree-beautiful-elegant-pink-red-purple-watercolor-smudge-background-picture-image_1220864.jpg)` }}>
+        <div className=' bg-no-repeat w-100 bg-cover h-100' style={{ backgroundImage: `url(https://png.pngtree.com/background/20210714/original/pngtree-beautiful-elegant-pink-red-purple-watercolor-smudge-background-picture-image_1220864.jpg)` }}>
             <Navbar expand="lg" style={{ marginTop: 0 }}>
                 <Container>
                     <img src={Icon} alt="" style={{ height: 60, width: 50 }} />
@@ -39,7 +39,7 @@ const feedback = () => {
             </Navbar>
 
             <div className='flex justify-content-center'><img style={{ height: 60, width: 70, marginTop: 30 }} src={Ficon} alt="" /><h4 className='text-center mt-5' style={{ color: 'blue' }}>Feedback of Our Trustful Customers </h4></div>
-            <div className=' p-3 flex flex-wrap gap-4 mt-5' style={{ alignSelf: 'center' }}>
+            <div className=' p-3 flex flex-wrap gap-4 mt-5 text-center' style={{ alignSelf: 'center' }}>
 
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src="https://cdn.prod.website-files.com/666ad77562dfabab1eb27f63/6743d2a20bb2b52f38e7d361_photo_2024-11-24_19-24-50.webp" />
@@ -104,7 +104,7 @@ const feedback = () => {
             </div>
             <div className='text-center'>
                 <Form style={{ justifySelf: 'center', color: 'blue' }}>
-                    <h5 className='mb-5' style={{ textDecorationLine: 'underline' }}> Give Your Feedback Here</h5>
+                    <h5 className='mb-5' style={{ textDecorationLine: 'underline' }}> Give Your Feedback Here👇🏻</h5>
                     <Form.Group className="mb-3 w-80 p-2" controlId="exampleForm.ControlInput1">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control type="email" placeholder="name@example.com" />
@@ -113,7 +113,7 @@ const feedback = () => {
                         <Form.Label>Comment</Form.Label>
                         <Form.Control as="textarea" rows={3} />
                     </Form.Group>
-                    <Button className='mt-4' variant="info" >SUBMIT</Button>
+                    <Button className='mt-4' variant="outline-info" ><b>SUBMIT </b></Button>
                 </Form>
             </div>
         </div>

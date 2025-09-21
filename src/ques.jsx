@@ -35,7 +35,7 @@ function FAQ() {
                     <img src={Anime} alt="" style={{ float: 'right', height: 70, width: 90 }} />
                 </Container>
             </Navbar>
-        <div className='flex justify-content-center'><img style={{height:80,width:80,marginTop:-15,marginRight:-5}} src={Faq} alt="" /><h4 className='text-center p-5no-wrap'>Frequently Asked Questions</h4></div>
+        <div className='flex justify-content-center'><img style={{height:80,width:80,marginTop:-15,marginRight:-5}} src={Faq} alt="" /><h4 className='text-center p-5no-wrap'style={{color:'blueviolet'}}>Frequently Asked Questions</h4></div>
         <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="0">
                 <Accordion.Header>What is your return policy?</Accordion.Header>
